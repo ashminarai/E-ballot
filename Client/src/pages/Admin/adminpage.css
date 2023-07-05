@@ -1,0 +1,48 @@
+.admin-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.tabs {
+    background-color: white;
+}
+
+.tabs button {
+    text-align: start;
+    font-size: 18px;
+    width: 200px;
+}
+
+.contents {
+    width: 100%;
+    border-left: 1px solid #90909050;
+}
+
+.content-outlet {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.admin-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-login-container {
+    width: 50%;
+    max-width: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

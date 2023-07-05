@@ -1,0 +1,16 @@
+.user-page {
+    height: 100vh;
+}
+
+.usr-details {
+    font-size: 14px;
+}
+
+.usr-details .uid {
+    font-size: 12px;
+    color: #00ff0c;
+}
+
+.usr-details .uname {
+    color: darkslategrey;
+}

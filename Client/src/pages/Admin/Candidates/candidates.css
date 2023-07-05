@@ -1,0 +1,37 @@
+.candidate-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100%;
+}
+
+.card {
+    width: 70%;
+    padding: 20px;
+
+}
+
+.usr-image {
+    object-fit: contain;
+    object-position: center;
+    image-rendering: optimizeSpeed;
+}
+
+.image {
+    padding: 3px;
+    border: 2px solid #bdbdbd;
+    box-shadow: 0 0 1px 0 #333;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.img-c {
+    font-size: 12px;
+    color: #8f8f8f;
+}
+
+.img-chooser {
+    padding: 3px;
+    font-size: 13px;
+}

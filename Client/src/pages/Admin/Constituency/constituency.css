@@ -1,0 +1,10 @@
+td .btn {
+    /*width: 80px;*/
+    padding: 6px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-w-80 {
+    width: 80px;
+}

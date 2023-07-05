@@ -1,0 +1,204 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.overlay {
+    z-index: 100;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+    background-color: #10101010;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.progress-comp {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1999;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #10101010;
+}
+
+.progress-comp .card {
+    width: fit-content;
+    height: fit-content;
+    min-width: 250px;
+    min-height: 150px;
+    max-width: 350px;
+    max-height: 250px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    animation: progress 2s ease 0s 1 normal forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.candidate-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.vote-container {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.election-report {
+    width: 100%;
+    height: fit-content;
+    font-family: "Poppins", sans-serif;
+}
+
+.prg-msg {
+    font-family: "Poppins", sans-serif;
+}
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #dc3545;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+
+@keyframes progress {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #acabcf;
+    border-radius: 10px;
+}

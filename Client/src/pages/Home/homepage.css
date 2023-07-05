@@ -1,0 +1,62 @@
+.background-overlay {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background: url('../../assets/images/bg.svg') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    opacity: .5;
+    z-index: 1;
+}
+
+.home-page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.login-container {
+    width: 100%;
+    height: calc(100vh - 63px);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-cmp {
+    width: 50%;
+    height: fit-content;
+    margin-right: 50px;
+    max-width: 400px;
+    min-width: 450px;
+    min-height: 330px;
+    background-color: #ffffff90;
+    border-radius: 20px;
+    z-index: 1054;
+}
+
+.navbar-brand {
+    font-family: "Poppins", serif;
+    font-size: 24px;
+}
+
+.nav-btn {
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-btn:hover {
+    color: #0d6efd;
+    border-bottom: 2px solid #0d6efd;
+}
+
+.row button {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
